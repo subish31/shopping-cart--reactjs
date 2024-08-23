@@ -1,13 +1,178 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width:600px;
+  margin: 20px auto;
+  background: rgb(200, 158, 130);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+button {
+  padding:10px;
+  margin: 0 5px;
+  background-color: rgb(200, 158, 130);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f7f;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.total {
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.shop-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.shop-item h2 {
+  margin: 0;
+}
+
+.shop-item button {
+  margin-left: 20px;
+}
+.cart{
+  background-color: beige;
+  padding:5px;
+  border-radius:10px;
+}
+.btn{
+  padding:7px 10px 7px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 100px;
+  background-color: rgb(238, 201, 145);
+  color: black;
+}
+.btn:hover{
+  background-color: rgb(240, 249, 4);
+  border:4px solid rgb(231, 184, 115);
+  font-size: 16px;
+}
+.btn2{
+  padding:7px 10px 7px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 100px;
+  background-color:rgb(200, 158, 130);
+  color: white;
+}
+.btn3{
+  padding:5px 10px 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 100px;
+  background-color:rgb(200, 158, 130);
+  color: white;
+}
+.btn2:hover{
+  background-color: rgb(165, 180, 2);
+  border:4px solid rgb(200, 158, 130);
+  font-size: 16px;
+  color:black;
+  font-weight: bolder;
+}
+.btn3:hover{
+  background-color: rgb(165, 180, 2);
+  border:4px solid rgb(200, 158, 130);
+  font-size: 16px;
+  color:black;
+  font-weight: bolder;
+}
+.btn4:hover{
+  background-color: rgb(165, 180, 2);
+  border:4px solid rgb(200, 158, 130);
+  font-size: 16px;
+  color:black;
+  font-weight: bolder;
 }
